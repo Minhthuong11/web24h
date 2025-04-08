@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    body {
+        margin: 20px 150px;
+    }
+
+    .block-left {
+        width: auto;
+    }
+
+    .block-bottom {
+        width: 100%;
+    }
+
+    .xe {
+        width: 730px;
+    }
+
+    .web-xe {
+        width: 351px;
+        float: left;
+    }
+
+    .web-xe-phai {
+        width: 351px;
+    }
+
+    .web-xe h3 {
+        color: green;
+        width: 100%;
+        display: inline-block;
+        border-bottom: 1px solid green;
+        padding-bottom: 10px;
+    }
+
+    .tabxe {
+        width: 100%;
+        display: inline-block;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .tabxe li {
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+        background-color: gray;
+        border-radius: 10px;
+    }
+
+    .web-xe img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .web-xe h4 {
+        display: inline-block;
+        width: 100%;
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .noidungxe {
+        display: inline-block;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .noidungxe li {
+        display: inline-block;
+        width: 100%;
+        border-top: 1px solid gray;
+        padding: 10px 0;
+    }
+
+    .dthoai {
+
+        width: 730px;
+    }
+
+    .web-dthoai {
+        width: 351px;
+        float: left;
+    }
+
+
+    .web-dthoai h3 {
+        display: inline-block;
+        width: 100%;
+        color: green;
+        border-bottom: 1px solid green;
+        padding-bottom: 10px;
+    }
+
+    .tabdthoai {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .tabdthoai li {
+        background-color: gray;
+        text-align: center;
+        padding: 5px;
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+    .web-dthoai img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .web-dthoai h4 {
+        display: inline-block;
+        width: 100%;
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .noidungdthoai {
+        display: inline-block;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .noidungdthoai li {
+        display: inline-block;
+        width: 100%;
+        border-top: 1px solid gray;
+        padding: 10px 0;
+    }
+
+    .dulich {
+        width: 100%;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .web-dulich {
+        width: 350px;
+        float: left;
+    }
+
+    .dulich h3 {
+        color: green;
+        border-bottom: 1px solid green;
+        display: inline-block;
+        background-color: beige;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        display: flex;
+    }
+
+    .web-dulich img {
+        width: 100%;
+        height: 200px;
+        padding-top: 10px;
+    }
+
+    .web-dulich h4 {
+        font-size: 20px;
+        display: inline-block;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .web-dulich-phai {
+        width: 350px;
+        float: right;
+    }
+
+    .tab-dulich {
+        width: 100%;
+        display: inline-block;
+
+    }
+
+    .tab-dulich li {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tab-dulich-1 {
+        display: flex;
+    }
+
+    .tab-dulich img {
+        width: 120px;
+        margin-right: 10px;
+
+    }
+
+    .multimedia {
+
+        width: 100%;
+    }
+
+    .media-phai {
+        width: 350px;
+        float: left;
+    }
+
+    .tab-media {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        background-color: rgb(212, 219, 216);
+    }
+
+    .tab-media li {
+        background-color: green;
+        text-align: center;
+        padding: 5px;
+        display: inline-block;
+        border-radius: 10px;
+        color: aliceblue;
+        margin-right: 10px;
+    }
+
+    .tab-media .tab1 {
+        color: green;
+        background-color: azure;
+    }
+
+    .media-phai img {
+        width: 100%;
+        height: 200px;
+        padding: 10px 0;
+    }
+
+    .media-phai h4 {
+        display: inline-block;
+        width: 100%;
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .media-trai {
+        width: 350px;
+        float: right;
+    }
+
+    .tab-media-trai {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .tab-media-trai li {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tab-media-trai-1 {
+        display: flex;
+    }
+
+    .tab-media-trai img {
+        width: 140px;
+        margin-right: 10px;
+    }
+
+    .tab-media .tab1 {
+        background-color: transparent !important;
+    }
+
+    .block-right {
+        width: 300px;
+        display: inline-block;
+
+    }
+
+    .block-new-phai img {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .drcpd h5 {
+        display: inline-block;
+        width: 100%;
+        background-color: #d2577e;
+        height: 40px;
+        color: #FFFF;
+        border-radius: 10px 10px 0 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .drcpd-1 {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .drcpd-1-2 {
+        display: flex;
+        width: 100%;
+    }
+
+    .drcpd-1-2 img {
+        width: 100px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    /* .drcpd-1-2 p{
+    display: flex;
+
+} */
+</style>
+
+<body>
+    <div class="block-left">
+        <div class="block-new-trai">
+            <div class="xe">
+                <div class="web-xe">
+                    <h3>XE MAY-XE DAP</h3>
+                    <ul class="tabxe">
+                        <li>Xe phan khoi lon</li>
+                        <li>Xe tay ga</li>
+                        <li>The gioi xe</li>
+                    </ul>
+                    <img src="./xemay.jpg" alt="xe may">
+                    <h4>Vì sao người cầm vàng dễ dàng mua được 3 chiếc xe máy Honda Vision?</h4>
+                    <p>Giá vàng tăng đỉnh khiến người cầm vàng dễ dàng mua được nhiều chiếc xe máy bán chạy nhất của
+                        Honda.</p>
+                    <ul class="noidungxe">
+                        <li>Clip: Khi "49 gặp 50" và pha xử lý đi vào lòng đất</li>
+                        <li>Honda CBR250RR 2025 trình làng với diện mạo đẹp "hút mắt", lại bổ sung trang bị cao cấp</li>
+                        <li>Piaggio Liberty Z khiến gen Z "ghiền" ngay từ cái nhìn đầu tiên</li>
+                        <li>Huyền thoại xe số Suzuki Smash tái xuất, giá từ hơn 43 triệu đồng</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="web-xe web-xe-phai">
+            <h3>O TO</h3>
+            <ul class="tabxe">
+                <li>Gia xe</li>
+                <li>Tu van</li>
+                <li>Danh gia</li>
+            </ul>
+            <img src="./oto.png" alt="o to">
+            <h4>Những lỗi vi phạm giao thông của tài xế ô tô có mức phạt nặng nhất</h4>
+            <p>Nghị định 168/2024/NĐ-CP áp dụng mức phạt nghiêm khắc hơn đối với nhiều hành vi vi phạm giao thông,
+                đặc biệt là đối với người điều khiển ô tô.</p>
+            <ul class="noidungxe">
+                <li>25 mẫu xe ô tô mất giá nhanh nhất trong 5 năm mà người mua xe nên biết</li>
+                <li>Bộ đôi Bentley có thêm phiên bản lấy cảm hứng từ giải đua Le Mans</li>
+                <li>Hình ảnh “dài cổ” ngồi chờ sạc xe điện sắp đi vào dĩ vãng</li>
+                <li>Siêu phẩm Ferrari SF90 XX Spider lên sàn đấu giá</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="block-center">
+        <div class="dthoai">
+            <div class="web-dthoai">
+                <h3>THOI TRANG HI-TECH</h3>
+                <ul class="tabdthoai">
+                    <li>Dien thoai</li>
+                    <li>Lap top</li>
+                    <li>Dien tu gia dung</li>
+                </ul>
+                <img src="./dthoai.jpg" alt="dien thoai">
+                <h4>Apple đẩy mạnh sản xuất iPhone tại Ấn Độ, lý do vì đâu?</h4>
+                <p>Theo báo cáo mới nhất, Foxconn đang có kế hoạch tăng gấp đôi sản lượng iPhone tại Ấn Độ vào cuối năm
+                    2025.</p>
+                <ul class="noidungdthoai">
+                    <li>Sẽ không còn sự trở lại của bất cứ chiếc iPhone mini nào</li>
+                    <li>Sony Xperia 1 VII sẽ có cảm biến tele 1/2 inch chất lượng cao</li>
+                    <li>Những “kẻ trộm điện” giấu mặt trong nhà, âm thầm khiến hóa đơn điện tăng vọt</li>
+                    <li>Điện thoại Galaxy giả khiến Samsung nóng mặt</li>
+                </ul>
+            </div>
+        </div>
+        <div class="web-dthoai web-dthoai-phai">
+            <h3>CONG NGHE THONG TIN</h3>
+            <ul class="tabdthoai">
+                <li>Game</li>
+                <li>Phan mem</li>
+                <li>Mang xa hoi</li>
+            </ul>
+            <img src="./cntt.jpg" alt="cntt">
+            <h4>6 cập nhật của VNeID 2.1.18: Có xác nhận chuyển quyền sở hữu xe</h4>
+            <p>Đây đều là các cập nhật thiết thực, gắn liền với hoạt động thường ngày của mỗi công dân Việt Nam.</p>
+            <ul class="noidungdthoai">
+                <li>Vị thế của máy in Lexmark - thương hiệu Mỹ, trên thị trường Việt Nam</li>
+                <li>Hai nhà mạng vừa tăng tốc độ Internet lên gấp đôi, tối thiểu 300Mbps</li>
+                <li>HOT: Qualcomm mua công ty AI của tỷ phú Phạm Nhật Vượng</li>
+                <li>SpaceX đầu tư 1,5 tỷ USD vào Việt Nam: Tàu thuyền, máy bay chờ kết nối Internet</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="block-right">
+        <div class="block-new-phai">
+            <img src="./24h.png" alt="24h">
+            <div class="drcpd">
+                <h5>DANH RIENG CHO PHAI DEP</h5>
+                <div class="drcpd-1">
+                    <div class="drcpd-1-2">
+                        <img src="https://d1hjkbq40fs2x4.cloudfront.net/2016-01-31/files/1045.jpg" alt="">
+                        <p>Nữ diễn viên mang bầu sexy nhất showbiz Việt, vừa sinh con thứ 3 xong...</p>
+                    </div>
+                    <ul>
+                        <li>10 dấu hiệu sớm ở trẻ cho thấy có nguy cơ mắc tự kỷ, cha mẹ cần biết để can thiệp kịp thời
+                        </li>
+                        <li>"Bố ruột anh Núi" của Sóng Ở Đáy Sông: Tuổi già cô độc dù có vợ con, ngỡ ngàng diện mạo sau
+                            thời
+                            gian "ở ẩn"</li>
+                        <li>Làm Phó chủ tịch công ty, Đỗ Mỹ Linh vẫn ăn mặc giản dị đưa ái nữ đi chơi, bé Ti Mướp chuẩn
+                            tiểu
+                            thư nhà giàu</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-new-phai">
+            <img src="./24h.png" alt="24h">
+            <div class="drcpd">
+                <h5>DANH RIENG CHO PHAI DEP</h5>
+                <div class="drcpd-1">
+                    <div class="drcpd-1-2">
+                        <img src="https://d1hjkbq40fs2x4.cloudfront.net/2016-01-31/files/1045.jpg" alt="">
+                        <p>Nữ diễn viên mang bầu sexy nhất showbiz Việt, vừa sinh con thứ 3 xong...</p>
+                    </div>
+                    <ul>
+                        <li>10 dấu hiệu sớm ở trẻ cho thấy có nguy cơ mắc tự kỷ, cha mẹ cần biết để can thiệp kịp thời
+                        </li>
+                        <li>"Bố ruột anh Núi" của Sóng Ở Đáy Sông: Tuổi già cô độc dù có vợ con, ngỡ ngàng diện mạo sau
+                            thời
+                            gian "ở ẩn"</li>
+                        <li>Làm Phó chủ tịch công ty, Đỗ Mỹ Linh vẫn ăn mặc giản dị đưa ái nữ đi chơi, bé Ti Mướp chuẩn
+                            tiểu
+                            thư nhà giàu</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-bottom">
+        <div class="dulich">
+            <h3>DU LICH</h3>
+            <div class="web-dulich">
+
+                <img src="./dulich.jpg" alt="du lich">
+                <h4>Tour du lịch Đền Hùng về đêm có gì độc đáo?</h4>
+                <p>Mới đây, Khu Di tích lịch sử Đền Hùng đã tổ chức khởi động tour đêm Đền Hùng với chủ đề "Linh thiêng
+                    nguồn cội".</p>
+            </div>
+            <div class="web-dulich-phai">
+                <ul class="tab-dulich">
+                    <li class="tab-dulich-1">
+                        <img src="./dulich1.jpg" alt="dulich1">
+                        <p>Cây anh đào 600 tuổi nở rực ở Nhật Bản</p>
+                    </li>
+                    <li class="tab-dulich-1">
+                        <img src="./dulich2.jpg" alt="dulich2">
+                        <p>Chiếc cầu nhỏ như trong truyện cổ tích, nằm cheo leo trên vực thẳm</p>
+                    </li>
+                    <li class="tab-dulich-1">
+                        <img src="./dulich3.jpg" alt="dulich3">
+                        <p>Tour du lịch Đền Hùng về đêm có gì độc đáo?</p>
+                    </li>
+                    <li class="tab-dulich-1">
+                        <img src="./dulichj4.jpg" alt="dulich4">
+                        <p> Quốc gia an toàn nhất thế giới dành cho du khách nước ngoài</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="multimedia">
+            <ul class="tab-media">
+                <li class="tab tab1">MUTILMEDIA</li>
+                <li class="tab tab2">Video</li>
+                <li class="tab tab2">Podcast</li>
+                <li class="tab tab2">Infographic</li>
+                <li class="tab tab2">Magazine</li>
+            </ul>
+            <div class="media-phai">
+
+                <img src="./media.jpg" alt="media">
+                <h4>Hành trình sinh tử trong tâm chấn động đất Myanmar</h4>
+            </div>
+            <div class="media-trai">
+                <ul class="tab-media-trai">
+                    <li class="tab-media-trai-1">
+                        <img src="./sala.jpg" alt="">
+                        <p> Liverpool tiến sát ngôi vương, Salah bất ngờ "mất tích" (Clip tin nóng)</p>
+                    </li>
+                    <li class="tab-media-trai-1">
+                        <img src="./1743564723-12-thumbnail-width740height495_anh_cat_3_2.jpg" alt="">
+                        <p>Bạn gái bị mỉa mai “yêu vì tiền”, chàng trai 10X có màn lấy lại danh dự thu hút 3 triệu lượt
+                            xem</p>
+                    </li>
+                    <li class="tab-media-trai-1">
+                        <img src="./thanhnien.jpg" alt="">
+                        <p>Clip: Thanh niên phóng xe như "tên lửa", bay xa chục mét chui thẳng vào nhà dân</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
